@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/cinza"
+    android:layout_marginBottom="16dp"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/produto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="6dp"
+        android:textColor="@color/white"
+        android:layout_marginStart="6dp"
+        android:textSize="28sp"
+        />
+
+    <TextView
+        android:id="@+id/valor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:text="Valor:"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:layout_marginStart="6dp"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="12sp"
+        app:layout_constraintTop_toBottomOf="@+id/produto"
+
+        />
+
+    <TextView
+        android:id="@+id/quantidade"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:textColor="@color/white"
+        android:text="Quantidade:"
+        android:textStyle="bold"
+        android:layout_marginStart="6dp"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="12sp"
+        app:layout_constraintTop_toBottomOf="@+id/valor"
+        />
+
+    <TextView
+        android:id="@+id/desconto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="6dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="10dp"
+        android:background="@color/green"
+        android:padding="4dp"
+        android:text="10% De Desconto"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/quantidade" />
+
+    <TextView
+        android:id="@+id/valorInt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:text="R$ 20,00"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toEndOf="@+id/valor"
+        app:layout_constraintTop_toBottomOf="@+id/produto"
+        android:layout_marginTop="12dp"
+        android:layout_marginStart="6dp"
+        />
+
+    <TextView
+        android:id="@+id/quantidadeInt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:text="12"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toEndOf="@+id/quantidade"
+        app:layout_constraintTop_toBottomOf="@+id/valorInt"
+        android:layout_marginTop="12dp"
+        android:layout_marginStart="6dp"
+        />
+
+    <TextView
+        android:id="@+id/marca"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:text="Marca:"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toEndOf="@+id/valorInt"
+        app:layout_constraintTop_toBottomOf="@+id/produto"
+        android:layout_marginTop="12dp"
+        android:layout_marginStart="100dp"
+        />
+
+    <TextView
+        android:id="@+id/ref"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ref:"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/marca"
+        app:layout_constraintTop_toBottomOf="@+id/marca"
+        android:layout_marginTop="12dp" />
+
+    <TextView
+        android:id="@+id/leveQuant"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:background="@color/laranja"
+        android:padding="4dp"
+        android:text="Leve 5 Pague 4"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/ref"
+        android:layout_marginBottom="10dp"
+
+
+        app:layout_constraintTop_toBottomOf="@+id/ref" />
+
+
+    <TextView
+        android:id="@+id/marcaReal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Vasconcelos"
+        android:textSize="16sp"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toEndOf="@+id/marca"
+        app:layout_constraintTop_toBottomOf="@+id/produto"
+        android:layout_marginTop="12dp"
+        android:layout_marginStart="8dp" />
+
+    <TextView
+        android:id="@+id/refInt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0001"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@id/ref"
+        app:layout_constraintTop_toBottomOf="@id/marcaReal"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="12dp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
